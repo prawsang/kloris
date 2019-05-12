@@ -1,0 +1,25 @@
+@import "reset";
+
+@import "variables";
+@import "typography";
+@import "container";
+
+@import "nav";
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+::selection {
+  background: $accent-light; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $accent-light; /* Gecko Browsers */
+}
+
+footer {
+  margin-top: 100px;
+  border-bottom: 4px solid $accent-light;
+}
