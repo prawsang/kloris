@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Ricco 2013 (Thailand)`,
-    description: `We are specialized in sourcing and distributing raw materials and components with total supply chain quality assurance and cost effectiveness.`,
+    title: `Kloris`,
+    description: `123123`,
     author: `@prawsang`,
   },
   plugins: [
@@ -10,7 +10,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets`,
       },
     },
     `gatsby-transformer-sharp`,
