@@ -16,9 +16,11 @@ body {
   h6 {
     font-weight: 200;
     font-family: "Julius Sans One", "Kanit", sans-serif;
+    margin-bottom: 1em;
   }
   p {
     line-height: 1.2;
+    margin-bottom: 1.5em;
   }
   h1 {
     font-size: 3em;
@@ -52,4 +54,8 @@ body {
 }
 a.accent:hover {
   color: $accent-dark;
+}
+
+.larger {
+  font-size: 1.1em;
 }

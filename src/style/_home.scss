@@ -1,0 +1,17 @@
+.hero-wrapper {
+  background-color: #222222;
+  background-size: 100% auto;
+  padding-top: 50%;
+}
+.hero-content {
+  left: 50%;
+  max-width: 500px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  .content {
+    text-align: center;
+    text-shadow: 0 0 4px white;
+  }
+}
