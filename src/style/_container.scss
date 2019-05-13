@@ -13,7 +13,7 @@
     max-width: 600px;
   }
   &.small {
-    max-width: 800px;
+    max-width: 900px;
   }
   &.wide {
     width: 100%;
@@ -74,6 +74,7 @@
 
 /* padding */
 .row {
+  display: flex;
   &.col-has-padding {
     margin: 0 -15px;
     .col {
@@ -97,5 +98,27 @@
 @media screen and (min-width: 768px) {
   .is-hidden-sm {
     display: none;
+  }
+}
+
+/* cols */
+.col-9 {
+  flex-basis: 75%;
+}
+.col-8 {
+  flex-basis: 66%;
+}
+.col-6 {
+  flex-basis: 50%;
+}
+.col-4 {
+  flex-basis: 33%;
+}
+.col-3 {
+  flex-basis: 25%;
+}
+@media screen and (max-width: 767px) {
+  .row {
+    display: block;
   }
 }
