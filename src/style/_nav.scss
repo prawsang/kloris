@@ -20,6 +20,9 @@ nav {
   background-color: white;
   // box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
   padding: 20px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   width: 100%;
   z-index: 999;
   .menu {
