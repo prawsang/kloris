@@ -99,7 +99,9 @@ footer {
     padding: 20px;
     &:hover {
       background-color: white;
-      color: #00c300;
+      .social-icon {
+        color: #00c300;
+      }
     }
     .social-icon {
       margin: 0;
