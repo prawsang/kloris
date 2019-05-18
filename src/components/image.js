@@ -10,11 +10,11 @@ export const fullWidthImage = graphql`
   }
 `
 
-export const thumb260 = graphql`
-  fragment thumb260 on File {
+export const fixed250 = graphql`
+  fragment fixed250 on File {
     childImageSharp {
-      fluid(maxWidth: 260, maxHeight: 260) {
-        ...GatsbyImageSharpFluid
+      fixed(width: 250) {
+        ...GatsbyImageSharpFixed
       }
     }
   }

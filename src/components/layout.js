@@ -9,7 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Nav from "./nav"
-// import Footer from "./footer"
+import Footer from "./footer"
+
 import "../style/index.scss"
 import logo from "../assets/web/logo.svg"
 import lang from "../assets/web/th.png"
@@ -24,7 +25,7 @@ const Layout = ({ children }) => (
     </div>
     <Nav />
     {children}
-    {/* <Footer /> */}
+    <Footer />
   </>
 )
 

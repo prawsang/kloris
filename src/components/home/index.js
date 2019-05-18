@@ -1,5 +1,6 @@
 import React from "react"
 import Hero from "./hero"
+import Products from "../products"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
@@ -8,22 +9,16 @@ const Image = ({ name, className, style }) => (
     query={graphql`
       query {
         remedy: file(relativePath: { eq: "images/natural-remedy.jpg" }) {
-          ...fullWidthImage
+          ...fixed250
         }
         healing: file(relativePath: { eq: "images/healing.png" }) {
-          ...fullWidthImage
-        }
-        serum: file(relativePath: { eq: "images/1-rocks.jpg" }) {
-          ...fullWidthImage
-        }
-        sunscreen: file(relativePath: { eq: "images/2-flowers-portrait.jpg" }) {
-          ...fullWidthImage
+          ...fixed250
         }
       }
     `}
     render={data => (
       <Img
-        fluid={data[name].childImageSharp.fluid}
+        fixed={data[name].childImageSharp.fixed}
         className={className}
         style={style}
       />
@@ -66,6 +61,7 @@ const HomePage = () => (
         </div>
       </div>
     </section>
+    <Products />
   </main>
 )
 

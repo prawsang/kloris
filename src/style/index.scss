@@ -21,7 +21,8 @@ body {
   background: $accent-light; /* Gecko Browsers */
 }
 
-footer {
-  margin-top: 100px;
-  border-bottom: 4px solid $accent-light;
+.product-image {
+  margin: auto;
+  margin-bottom: 40px;
+  max-width: 250px;
 }
