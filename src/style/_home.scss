@@ -1,7 +1,6 @@
-.hero-wrapper {
-  background-color: #222222;
-  background-size: 100% auto;
-  padding-top: 50%;
+.hero-wrapper,
+.hero-wrapper-image {
+  width: 100%;
 }
 .hero-content {
   left: 50%;
@@ -13,5 +12,30 @@
   .content {
     text-align: center;
     text-shadow: 0 0 4px white;
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-wrapper-image {
+    width: 200%;
+  }
+  .hero-content {
+    background-color: $text;
+    box-sizing: border-box;
+    color: white;
+    margin: auto;
+    padding: 30px 15px;
+    position: static;
+    transform: none;
+    width: 100%;
+    h2 {
+      font-size: 2em;
+    }
+    .content {
+      text-shadow: none;
+    }
   }
 }

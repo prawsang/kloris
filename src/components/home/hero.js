@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import BackgroundImage from "gatsby-background-image"
+import Img from "gatsby-image"
 
 const Hero = () => (
   <StaticQuery
@@ -12,10 +12,11 @@ const Hero = () => (
       }
     `}
     render={data => (
-      <BackgroundImage
-        fluid={data.header.childImageSharp.fluid}
-        className="hero-wrapper"
-      >
+      <div className="hero-wrapper">
+        <Img
+          fluid={data.header.childImageSharp.fluid}
+          className="hero-wrapper-image"
+        />
         <div className="hero-content">
           <div className="content">
             <h2>Let the Nature Unleash Your Beauty</h2>
@@ -25,7 +26,21 @@ const Hero = () => (
             </p>
           </div>
         </div>
-      </BackgroundImage>
+      </div>
+      // <BackgroundImage
+      //   fluid={data.header.childImageSharp.fluid}
+      //   className="hero-wrapper"
+      // >
+      //   <div className="hero-content">
+      //     <div className="content">
+      //       <h2>Let the Nature Unleash Your Beauty</h2>
+      //       <p className="larger">
+      //         Defend. Repair. Hydrate. Stay gorgeous and enhance your skin care
+      //         routine with our <b>Miracle Radiance Brightening Set.</b>
+      //       </p>
+      //     </div>
+      //   </div>
+      // </BackgroundImage>
     )}
   />
 )

@@ -1,6 +1,11 @@
 .section {
   margin-bottom: 60px;
 }
+@media screen and (max-width: 767px) {
+  .section {
+    margin-bottom: 30px;
+  }
+}
 
 .container {
   box-sizing: border-box;
@@ -37,7 +42,10 @@
 @media screen and (max-width: 767px) {
   .container {
     width: 90%;
-    .full-width-xs {
+    &.has-padding {
+      padding: 20px;
+    }
+    &.full-width-xs {
       width: 100%;
     }
   }
@@ -88,6 +96,22 @@
       margin: 0 -30px;
       .col {
         padding: 30px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .row {
+    &.col-has-padding {
+      margin: 0 -10px;
+      .col {
+        padding: 10px;
+      }
+      &.wide-padding {
+        margin: 0 -20px;
+        .col {
+          padding: 20px;
+        }
       }
     }
   }

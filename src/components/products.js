@@ -26,20 +26,17 @@ const Image = ({ name, className, style }) => (
 
 const Products = () => (
   <section className="section container small">
-    <div className="row col-has-padding">
+    <div className="row col-has-padding wide-padding">
       <div className="col col-6 center">
         <Image name="serum" className="product-image" />
-        <div className="content">
+        <div className="content" style={{ maxWidth: 300, margin: "auto" }}>
           <h4>Brightening Essence Serum</h4>
           <p>Ready to soothe, hydrate, so your skin can illuminate.</p>
         </div>
       </div>
-      <div
-        className="col col-6 center"
-        style={{ paddingLeft: 60, paddingRight: 60 }}
-      >
+      <div className="col col-6 center">
         <Image name="sunscreen" className="product-image" />
-        <div className="content">
+        <div className="content" style={{ maxWidth: 300, margin: "auto" }}>
           <h4>Perfect Sunscreen SPF50/PA+++</h4>
           <p>Be carefree in the sunlight throughout the day.</p>
         </div>

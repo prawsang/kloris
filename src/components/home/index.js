@@ -33,7 +33,7 @@ const HomePage = () => (
     </section>
     <section className="section container small">
       <div className="row col-has-padding wide-padding is-ai-center">
-        <div className="col col-4">
+        <div className="col col-4 center">
           <Image name="remedy" />
         </div>
         <div className="col col-8 content">
@@ -46,9 +46,9 @@ const HomePage = () => (
         </div>
       </div>
     </section>
-    <section className="section container dark small has-padding">
+    <section className="section container dark small has-padding full-width-xs">
       <div className="row col-has-padding wide-padding is-ai-center">
-        <div className="col col-4">
+        <div className="col col-4 center">
           <Image name="healing" />
         </div>
         <div className="col col-8 content">
