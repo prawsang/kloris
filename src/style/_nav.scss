@@ -112,7 +112,6 @@ nav {
 
 footer {
   background-color: #fff4f1;
-  border-bottom: 4px solid $accent;
   margin-top: 100px;
   .header {
     font-size: 0.75em;
@@ -121,11 +120,11 @@ footer {
     margin-right: 1em;
     text-transform: uppercase;
   }
-  .contact {
+  .phone {
     background-color: $accent;
     font-weight: bold;
     padding: 20px;
-    .contact-icon {
+    .phone-icon {
       color: $text;
       margin-right: 0.5em;
     }
@@ -145,6 +144,9 @@ footer {
   .line {
     padding: 20px;
     transition: background-color 0.3s ease;
+    .line-id {
+      margin-left: 0.5em;
+    }
     &:hover {
       background-color: white;
       .social-icon {
@@ -153,6 +155,46 @@ footer {
     }
     .social-icon {
       margin: 0;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  footer {
+    border-bottom: 4px solid $accent;
+    padding-top: 30px;
+    .container {
+      width: 100%;
+    }
+    .row {
+      margin: 0 !important;
+    }
+    .header {
+      flex-basis: 100%;
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    .follow {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .contact {
+      padding: 0 !important;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      .is-flex {
+        flex-basis: 100%;
+      }
+      .phone {
+        display: block;
+        text-align: center;
+      }
+      .line {
+        background-color: white;
+        justify-content: center;
+        .social-icon {
+          color: #00c300;
+        }
+      }
     }
   }
 }

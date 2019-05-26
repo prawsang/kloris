@@ -12,23 +12,24 @@ const Footer = () => (
     <div className="container">
       <div className="row col-has-padding is-ai-stretch">
         <div
-          className="col col-6 is-flex is-ai-stretch"
+          className="contact col col-6 is-flex is-ai-stretch"
           style={{ paddingTop: 0, paddingBottom: 0 }}
         >
           <div className="is-flex is-ai-center">
             <p className="header">Contact</p>
           </div>
-          <p className="contact is-flex is-ai-center">
-            <FontAwesomeIcon icon={faPhone} className="contact-icon" />{" "}
+          <p className="phone is-flex is-ai-center">
+            <FontAwesomeIcon icon={faPhone} className="phone-icon" />{" "}
             +6694-994-8652
           </p>
           <div className="is-flex is-ai-center line">
             <span className="social-icon">
               <FontAwesomeIcon icon={faLine} />
             </span>
+            <span className="line-id">@kloris</span>
           </div>
         </div>
-        <div className="col col-6 is-flex is-jc-flex-end is-ai-center">
+        <div className="follow col col-6 is-flex is-jc-flex-end is-ai-center">
           <p className="header">Follow</p>
           <span className="social-icon facebook">
             <FontAwesomeIcon icon={faFacebookSquare} />
