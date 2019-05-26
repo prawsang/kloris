@@ -1,7 +1,7 @@
 import React from "react"
 
-const Nav = () => (
-  <nav>
+const Nav = ({ className }) => (
+  <nav className={className}>
     <ul className="menu">
       <li className="menu-item">Home</li>
       <li className="menu-item">From Nature to Skin</li>

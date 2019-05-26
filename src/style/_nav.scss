@@ -14,11 +14,13 @@
       position: absolute;
       width: 36px;
     }
+    .hamburger {
+      display: none;
+    }
   }
 }
 nav {
   background-color: white;
-  // box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
   padding: 20px 0;
   position: -webkit-sticky;
   position: sticky;
@@ -34,31 +36,74 @@ nav {
     .menu-item {
       letter-spacing: 1pt;
       font-size: 0.75em;
+      font-weight: 500;
       padding: 0 15px;
       text-transform: uppercase;
     }
   }
 }
+.overlay {
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
 
 @media screen and (max-width: 767px) {
   .nav-head {
-    display: none;
+    background-color: white;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    .lang {
+      height: 30px !important;
+      left: initial !important;
+      right: 0;
+      width: 30px !important;
+    }
+    .hamburger {
+      display: block !important;
+      font-size: 20px;
+      left: 0;
+      position: absolute;
+    }
+  }
+  nav {
+    padding: 0;
+    &.is-active {
+      .menu {
+        left: 0;
+      }
+    }
+  }
+  .overlay.is-active {
+    display: block;
   }
   nav .logo,
   nav .menu {
     display: block;
   }
   nav .menu {
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
+    background-color: white;
     bottom: 0;
-    width: 90%;
-    padding: 20px;
-    overflow-y: scroll;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    display: block;
+    left: -75vw;
     overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 20px;
+    padding-top: 52px;
+    position: fixed;
+    top: 0;
+    transition: left 0.3s ease;
+    width: 70vw;
     .menu-item {
       padding: 10px 0;
     }
@@ -68,7 +113,10 @@ nav {
 footer {
   background-color: #fff4f1;
   border-bottom: 4px solid $accent;
+  margin-top: 100px;
   .header {
+    font-size: 0.75em;
+    font-weight: 500;
     letter-spacing: 1pt;
     margin-right: 1em;
     text-transform: uppercase;
@@ -85,9 +133,8 @@ footer {
   .social-icon {
     color: $text;
     font-size: 40px;
-    height: 35px;
     margin-right: 15px;
-    width: 35px;
+    transition: color 0.3s ease;
     &.facebook:hover {
       color: #3b5998;
     }
@@ -97,6 +144,7 @@ footer {
   }
   .line {
     padding: 20px;
+    transition: background-color 0.3s ease;
     &:hover {
       background-color: white;
       .social-icon {

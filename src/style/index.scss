@@ -8,6 +8,14 @@
 
 @import "home";
 
+html {
+  width: 100vw;
+}
+@media screen and (max-width: 767px) {
+  html {
+    overflow-x: hidden;
+  }
+}
 body {
   min-height: 100vh;
   overflow-x: hidden;
@@ -19,6 +27,12 @@ body {
 }
 ::-moz-selection {
   background: $accent-light; /* Gecko Browsers */
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    margin-top: 52px;
+  }
 }
 
 .product-image {
