@@ -1,15 +1,37 @@
 import React from "react"
 
-const Nav = ({ className }) => (
-  <nav className={className}>
-    <ul className="menu">
-      <li className="menu-item">Home</li>
-      <li className="menu-item">From Nature to Skin</li>
-      <li className="menu-item">Intense Healing</li>
-      <li className="menu-item">Support</li>
-      <li className="menu-item">Contact Us</li>
-    </ul>
-  </nav>
-)
+import { FormattedMessage } from "react-intl"
+import { injectIntl, intlShape } from "react-intl"
 
-export default Nav
+const Nav = ({ className, intl }) => {
+  const textStyle = {
+    fontSize: intl.locale === "th" ? "0.85em" : "0.75em",
+  }
+  return (
+    <nav className={className}>
+      <ul className="menu">
+        <li className="menu-item" style={textStyle}>
+          <FormattedMessage id="home" />
+        </li>
+        <li className="menu-item" style={textStyle}>
+          <FormattedMessage id="fromNatureToSkin" />
+        </li>
+        <li className="menu-item" style={textStyle}>
+          <FormattedMessage id="intenseHealing" />
+        </li>
+        <li className="menu-item" style={textStyle}>
+          <FormattedMessage id="support" />
+        </li>
+        <li className="menu-item" style={textStyle}>
+          <FormattedMessage id="contactUs" />
+        </li>
+      </ul>
+    </nav>
+  )
+}
+
+Nav.propTypes = {
+  intl: intlShape.isRequired,
+}
+
+export default injectIntl(Nav)

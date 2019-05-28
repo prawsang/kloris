@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import { FormattedMessage } from "react-intl"
+import { injectIntl, intlShape } from "react-intl"
 
 const Hero = props => (
   <StaticQuery
@@ -21,22 +22,24 @@ const Hero = props => (
         />
         <div className="hero-content">
           <div className="content">
-            <button onClick={() => console.log(props)}>Click</button>
             <h2>
               <FormattedMessage id="heroHeader" />
             </h2>
-            <p className="larger">
-              <FormattedMessage id="heroText" />
-            </p>
-            {/* {lang === "th" ? (
+            {props.intl.locale === "th" ? (
               <p className="larger">
-                <b>{words[lang].productName}</b> {words[lang].heroText}
+                <b>
+                  <FormattedMessage id="setName" />
+                </b>{" "}
+                <FormattedMessage id="heroText" />
               </p>
             ) : (
               <p className="larger">
-                {words[lang].heroText} <b>{words[lang].productName}</b>
+                <FormattedMessage id="heroText" />{" "}
+                <b>
+                  <FormattedMessage id="setName" />
+                </b>
               </p>
-            )} */}
+            )}
           </div>
         </div>
       </div>
@@ -44,4 +47,8 @@ const Hero = props => (
   />
 )
 
-export default Hero
+Hero.propTypes = {
+  intl: intlShape.isRequired,
+}
+
+export default injectIntl(Hero)

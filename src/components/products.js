@@ -2,6 +2,8 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import { FormattedMessage } from "react-intl"
+
 const Image = ({ name, className, style }) => (
   <StaticQuery
     query={graphql`
@@ -25,20 +27,33 @@ const Image = ({ name, className, style }) => (
 )
 
 const Products = () => (
-  <section className="section container small">
+  <section className="section container" style={{ maxWidth: 700 }}>
+    <div className="content center">
+      <h2>
+        <FormattedMessage id="collection" />
+      </h2>
+    </div>
     <div className="row col-has-padding wide-padding">
       <div className="col col-6 center">
         <Image name="serum" className="product-image" />
         <div className="content" style={{ maxWidth: 300, margin: "auto" }}>
-          <h4>Brightening Essence Serum</h4>
-          <p>Ready to soothe, hydrate, so your skin can illuminate.</p>
+          <h4>
+            <FormattedMessage id="bes" />
+          </h4>
+          <p>
+            <FormattedMessage id="besShortDesc" />
+          </p>
         </div>
       </div>
       <div className="col col-6 center">
         <Image name="sunscreen" className="product-image" />
         <div className="content" style={{ maxWidth: 300, margin: "auto" }}>
-          <h4>Perfect Sunscreen SPF50/PA+++</h4>
-          <p>Be carefree in the sunlight throughout the day.</p>
+          <h4>
+            <FormattedMessage id="ps" />
+          </h4>
+          <p>
+            <FormattedMessage id="psShortDesc" />
+          </p>
         </div>
       </div>
     </div>

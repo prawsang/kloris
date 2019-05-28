@@ -39,11 +39,11 @@ const HomePage = () => (
           <Image name="remedy" />
         </div>
         <div className="col col-8 content">
-          <h2>From Nature to Skin</h2>
+          <h2>
+            <FormattedMessage id="fromNatureToSkin" />
+          </h2>
           <p>
-            Formulated with extracts from 7 different species of plants, Miracle
-            Radiance targets to rejuvenate your long-lost youthful, glowing skin
-            without upsetting your complexion.
+            <FormattedMessage id="fromNatureToSkinDesc" />
           </p>
         </div>
       </div>
@@ -54,11 +54,11 @@ const HomePage = () => (
           <Image name="healing" />
         </div>
         <div className="col col-8 content">
-          <h2>Intense Healing</h2>
+          <h2>
+            <FormattedMessage id="intenseHealing" />
+          </h2>
           <p>
-            Not only does Miracle Radiance heals the outer layers of your skin,
-            but also repairs the deeper layers and protects your skin from
-            sunlight and pollution, effectively and efficiently.
+            <FormattedMessage id="intenseHealingDesc" />
           </p>
         </div>
       </div>
