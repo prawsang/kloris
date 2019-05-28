@@ -1,8 +1,11 @@
+const languages = require("./src/data/languages")
+
 module.exports = {
   siteMetadata: {
     title: `Kloris`,
     description: `123123`,
     author: `@prawsang`,
+    languages,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -25,6 +28,14 @@ module.exports = {
         background_color: `#e22821`,
         theme_color: `#e22821`,
         display: `minimal-ui`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-i18n",
+      options: {
+        langKeyDefault: "en",
+        useLangKeyLayout: true,
+        prefixDefault: false,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -4,6 +4,8 @@ import Products from "../products"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import { FormattedMessage } from "react-intl"
+
 const Image = ({ name, className, style }) => (
   <StaticQuery
     query={graphql`
@@ -29,7 +31,7 @@ const Image = ({ name, className, style }) => (
 const HomePage = () => (
   <main>
     <section className="container wide section">
-      <Hero lang="en" />
+      <Hero />
     </section>
     <section className="section container small">
       <div className="row col-has-padding wide-padding is-ai-center">

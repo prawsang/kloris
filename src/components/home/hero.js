@@ -2,22 +2,9 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const words = {
-  en: {
-    heroHeader: "Let the Nature Unleash Your Beauty",
-    heroText:
-      "Defend. Repair. Hydrate. Stay gorgeous and enhance your skin care routine with our",
-    productName: "Miracle Radiance Brightening Set.",
-  },
-  th: {
-    heroHeader: "ให้ธรรมชาติปลดล็อคความเปล่งประกายของผิวคุณ",
-    heroText:
-      "ผสานคุณค่าจากพืชธรรมชาติ พร้อมดูแลและปกป้องผิวอย่างครบขั้นตอนและมีประสิทธิภาพ เพื่อผิวที่ดูอ่อนเยาว์ เปล่งประกาย ดูมีออร่า",
-    productName: "มิราเคิล เรเดียนส์",
-  },
-}
+import { FormattedMessage } from "react-intl"
 
-const Hero = ({ lang }) => (
+const Hero = props => (
   <StaticQuery
     query={graphql`
       query {
@@ -34,8 +21,14 @@ const Hero = ({ lang }) => (
         />
         <div className="hero-content">
           <div className="content">
-            <h2>{words[lang].heroHeader}</h2>
-            {lang === "th" ? (
+            <button onClick={() => console.log(props)}>Click</button>
+            <h2>
+              <FormattedMessage id="heroHeader" />
+            </h2>
+            <p className="larger">
+              <FormattedMessage id="heroText" />
+            </p>
+            {/* {lang === "th" ? (
               <p className="larger">
                 <b>{words[lang].productName}</b> {words[lang].heroText}
               </p>
@@ -43,7 +36,7 @@ const Hero = ({ lang }) => (
               <p className="larger">
                 {words[lang].heroText} <b>{words[lang].productName}</b>
               </p>
-            )}
+            )} */}
           </div>
         </div>
       </div>
