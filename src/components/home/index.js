@@ -29,7 +29,7 @@ const Image = ({ name, className, style }) => (
 const HomePage = () => (
   <main>
     <section className="container wide section">
-      <Hero />
+      <Hero lang="en" />
     </section>
     <section className="section container small">
       <div className="row col-has-padding wide-padding is-ai-center">
