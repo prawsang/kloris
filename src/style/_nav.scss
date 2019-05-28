@@ -9,10 +9,12 @@
       width: 120px;
     }
     .lang {
-      height: 36px;
+      img {
+        height: 36px;
+        width: 36px;
+      }
       left: 0;
       position: absolute;
-      width: 36px;
     }
     .hamburger {
       display: none;
