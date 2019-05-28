@@ -13,7 +13,8 @@ import { injectIntl, intlShape } from "react-intl"
 const Footer = ({ intl }) => {
   const textStyle = {
     fontSize: intl.locale === "th" ? "0.85em" : "0.75em",
-    fontWeight: intl.locale === "th" ? "300" : "500",
+    fontWeight: intl.locale === "th" ? "400" : "500",
+    letterSpacing: intl.locale === "th" ? "0.5pt" : "1pt",
   }
   return (
     <footer>

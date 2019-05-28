@@ -6,6 +6,7 @@ import { injectIntl, intlShape } from "react-intl"
 const Nav = ({ className, intl }) => {
   const textStyle = {
     fontSize: intl.locale === "th" ? "0.85em" : "0.75em",
+    letterSpacing: intl.locale === "th" ? "0.5pt" : "1pt",
   }
   return (
     <nav className={className}>
