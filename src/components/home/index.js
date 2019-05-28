@@ -63,6 +63,7 @@ const HomePage = () => (
         </div>
       </div>
     </section>
+    <div style={{ paddingBottom: 20 }} />
     <Products />
   </main>
 )
