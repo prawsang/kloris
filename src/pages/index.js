@@ -8,7 +8,11 @@ import home from "../data/messages/home/en"
 import general from "../data/messages/en"
 
 const IndexPage = props => (
-  <Layout location={props.location} i18nMessages={{ ...home, ...general }}>
+  <Layout
+    location={props.location}
+    i18nMessages={{ ...home, ...general }}
+    hasHero={true}
+  >
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Home />
   </Layout>

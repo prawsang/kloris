@@ -27,7 +27,7 @@ class Layout extends React.Component {
     showMenu: false,
   }
   render() {
-    const { children, location, i18nMessages } = this.props
+    const { children, location, i18nMessages, hasHero } = this.props
     const { showMenu } = this.state
     return (
       <StaticQuery
@@ -72,6 +72,7 @@ class Layout extends React.Component {
                   onClick={() => this.setState({ showMenu: false })}
                 />
                 <Nav className={showMenu ? "is-active" : ""} home={homeLink} />
+                {hasHero || <div style={{ paddingBottom: 70 }} />}
                 {children}
                 <Footer />
               </React.Fragment>

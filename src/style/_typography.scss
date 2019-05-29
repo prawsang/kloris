@@ -53,6 +53,9 @@ footer {
   strong {
     font-weight: 500;
   }
+  .image {
+    margin-bottom: 2em;
+  }
 }
 
 .accent {
@@ -67,4 +70,11 @@ a.accent:hover {
 }
 .center {
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .center-xs {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 }

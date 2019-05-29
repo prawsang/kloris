@@ -100,6 +100,9 @@
     }
   }
 }
+.col {
+  box-sizing: border-box;
+}
 @media screen and (max-width: 767px) {
   .row {
     &.col-has-padding {
@@ -149,4 +152,23 @@
   .row {
     display: block;
   }
+}
+
+/* wrap */
+.wrapped {
+  flex-wrap: wrap;
+}
+
+/* sticky */
+.sticky {
+  position: sticky;
+  top: 70px;
+}
+
+/* image containers */
+.rounded img {
+  border-radius: 50%;
+}
+img {
+  max-width: 100%;
 }
