@@ -3,6 +3,7 @@ import Hero from "./hero"
 import Products from "../products"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import { Link } from "gatsby"
 
 import { FormattedMessage } from "react-intl"
 
@@ -45,6 +46,9 @@ const HomePage = () => (
           <p>
             <FormattedMessage id="fromNatureToSkinDesc" />
           </p>
+          <button>
+            <FormattedMessage id="learnMore" />
+          </button>
         </div>
       </div>
     </section>
@@ -60,6 +64,9 @@ const HomePage = () => (
           <p>
             <FormattedMessage id="intenseHealingDesc" />
           </p>
+          <button>
+            <FormattedMessage id="learnMore" />
+          </button>
         </div>
       </div>
     </section>

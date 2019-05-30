@@ -1,0 +1,25 @@
+button {
+  background-color: transparent;
+  border: 2px solid $text;
+  font-size: 0.8em;
+  letter-spacing: 1pt;
+  line-height: 1.4;
+  max-width: 150px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: $text;
+    color: white;
+  }
+}
+.dark {
+  button {
+    border-color: white;
+    color: white;
+    &:hover {
+      background-color: white;
+      color: $text;
+    }
+  }
+}
