@@ -9,7 +9,7 @@ const Image = ({ name, className, style, fluid }) => (
     query={graphql`
       query {
         ps: file(relativePath: { eq: "images/2-flowers-square.jpg" }) {
-          ...fullWidthImage
+          ...fixed250
         }
         kakadu: file(relativePath: { eq: "images/kakadu.png" }) {
           ...fixed100
@@ -21,8 +21,7 @@ const Image = ({ name, className, style, fluid }) => (
     `}
     render={data => (
       <Img
-        fluid={fluid ? data[name].childImageSharp.fluid : null}
-        fixed={fluid ? null : data[name].childImageSharp.fixed}
+        fixed={data[name].childImageSharp.fixed}
         className={className}
         style={style}
       />
@@ -39,7 +38,7 @@ const Sunscreen = () => (
             <Image
               name="ps"
               fluid={true}
-              style={{ maxWidth: 200 }}
+              style={{ maxWidth: 200, maxHeight: 200 }}
               className="image"
             />
           </div>

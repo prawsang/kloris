@@ -9,7 +9,7 @@ const Image = ({ name, className, style, fluid }) => (
     query={graphql`
       query {
         bes: file(relativePath: { eq: "images/1-flowers-square.jpg" }) {
-          ...fullWidthImage
+          ...fixed250
         }
         lemon: file(relativePath: { eq: "images/lemon.png" }) {
           ...fixed100
@@ -27,8 +27,7 @@ const Image = ({ name, className, style, fluid }) => (
     `}
     render={data => (
       <Img
-        fluid={fluid ? data[name].childImageSharp.fluid : null}
-        fixed={fluid ? null : data[name].childImageSharp.fixed}
+        fixed={data[name].childImageSharp.fixed}
         className={className}
         style={style}
       />
@@ -44,9 +43,8 @@ const Serum = () => (
           <div className="rounded center">
             <Image
               name="bes"
-              fluid={true}
               className="image"
-              style={{ maxWidth: 200 }}
+              style={{ maxWidth: 200, maxHeight: 200 }}
             />
           </div>
           <h3>
