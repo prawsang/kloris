@@ -39,86 +39,92 @@ const bar = {
 const Kakadu = () => (
   <section
     className="section container full-width light"
-    style={{ paddingBottom: 40 }}
+    style={{ paddingBottom: 40, paddingTop: 10 }}
   >
     <div className="container">
-      <div className="row col-has-padding wide-padding content section">
-        <div className="col col-3">
-          <div className="image center-xs">
-            <Image />
+      <div className="section">
+        <div className="row col-has-padding wide-padding content">
+          <div className="col col-3 no-pb">
+            <div className="image center-xs">
+              <Image />
+            </div>
+          </div>
+          <div className="col col-9">
+            <div className="white rounded container full-width">
+              <h3 style={orange}>
+                <FormattedMessage id="kakaduHeader" />
+              </h3>
+              <p className="no-mb">
+                <FormattedMessage id="kakaduLongDesc" />
+              </p>
+            </div>
           </div>
         </div>
-        <div className="col col-9">
-          <div className="white rounded container full-width">
-            <h3 style={orange}>
-              <FormattedMessage id="kakaduHeader" />
+      </div>
+      <div className="section">
+        <div className="content">
+          <h5>
+            <FormattedMessage id="upTo" />{" "}
+            <span style={orange}>
+              <FormattedMessage id="hundredTimes" />
+            </span>{" "}
+            <FormattedMessage id="moreVitC" />
+          </h5>
+          <div style={{ ...gradient, ...bar, width: "100%" }} />
+          <div className="is-flex is-jc-space-between">
+            <span>
+              <FormattedMessage id="kakadu" />
+            </span>
+            <b>
+              <FormattedMessage id="upTo" />{" "}
+              <FormattedMessage id="hundredTimes" />
+            </b>
+          </div>
+          <div style={{ paddingBottom: 20 }} />
+          <div
+            style={{
+              ...bar,
+              width: "1%",
+              minWidth: 10,
+              backgroundColor: "#fc4a1a",
+            }}
+          />
+          <span>
+            <FormattedMessage id="orange" />
+          </span>
+        </div>
+      </div>
+      <div className="gray rounded content container full-width">
+        <div className="row col-has-padding">
+          <div className="col col-3">
+            <h3>
+              <FormattedMessage id="vitCHeader" />
             </h3>
-            <p className="no-mb">
-              <FormattedMessage id="kakaduLongDesc" />
+          </div>
+          <div className="col col-3">
+            <h5 style={orange}>
+              <FormattedMessage id="sunDamage" />
+            </h5>
+            <p>
+              <FormattedMessage id="sunDamageDesc" />
             </p>
           </div>
-        </div>
-      </div>
-      <div className="section content">
-        <h5>
-          <FormattedMessage id="upTo" />{" "}
-          <span style={orange}>
-            <FormattedMessage id="hundredTimes" />
-          </span>{" "}
-          <FormattedMessage id="moreVitC" />
-        </h5>
-        <div style={{ ...gradient, ...bar, width: "100%" }} />
-        <div className="is-flex is-jc-space-between">
-          <span>
-            <FormattedMessage id="kakadu" />
-          </span>
-          <b>
-            <FormattedMessage id="upTo" />{" "}
-            <FormattedMessage id="hundredTimes" />
-          </b>
-        </div>
-        <div style={{ paddingBottom: 20 }} />
-        <div
-          style={{
-            ...bar,
-            width: "1%",
-            minWidth: 10,
-            backgroundColor: "#fc4a1a",
-          }}
-        />
-        <span>
-          <FormattedMessage id="orange" />
-        </span>
-      </div>
-      <div className="row section gray rounded col-has-padding content container full-width">
-        <div className="col col-3">
-          <h3>
-            <FormattedMessage id="vitCHeader" />
-          </h3>
-        </div>
-        <div className="col col-3">
-          <h5 style={orange}>
-            <FormattedMessage id="sunDamage" />
-          </h5>
-          <p>
-            <FormattedMessage id="sunDamageDesc" />
-          </p>
-        </div>
-        <div className="col col-3">
-          <h5 style={orange}>
-            <FormattedMessage id="collagen" />
-          </h5>
-          <p>
-            <FormattedMessage id="collagenDesc" />
-          </p>
-        </div>
-        <div className="col col-3">
-          <h5 style={orange}>
-            <FormattedMessage id="wrinkling" />
-          </h5>
-          <p>
-            <FormattedMessage id="wrinklingDesc" />
-          </p>
+          <div className="col col-3">
+            <h5 style={orange}>
+              <FormattedMessage id="collagen" />
+            </h5>
+            <p>
+              <FormattedMessage id="collagenDesc" />
+            </p>
+          </div>
+          <div className="col col-3">
+            <h5 style={orange}>
+              <FormattedMessage id="wrinkling" />
+            </h5>
+            <p>
+              <FormattedMessage id="wrinklingDesc" />
+            </p>
+          </div>
         </div>
       </div>
     </div>

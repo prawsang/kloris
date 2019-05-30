@@ -3,7 +3,7 @@
 }
 @media screen and (max-width: 767px) {
   .section {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 }
 
@@ -61,6 +61,9 @@
     }
     &.full-width-xs {
       width: 100%;
+    }
+    &.rounded {
+      padding: 30px;
     }
   }
 }
