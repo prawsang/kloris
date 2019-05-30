@@ -50,8 +50,8 @@ const Kakadu = () => (
         </div>
         <div className="col col-9">
           <div className="white rounded container full-width">
-            <h3>
-              <FormattedMessage id="kakaduHeader" style={orange} />
+            <h3 style={orange}>
+              <FormattedMessage id="kakaduHeader" />
             </h3>
             <p className="no-mb">
               <FormattedMessage id="kakaduLongDesc" />
