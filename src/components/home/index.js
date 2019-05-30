@@ -30,7 +30,7 @@ const Image = ({ name, className, style }) => (
 )
 
 const HomePage = () => (
-  <main>
+  <React.Fragment>
     <section className="container wide section">
       <Hero />
     </section>
@@ -68,7 +68,7 @@ const HomePage = () => (
     </section>
     <div style={{ paddingBottom: 20 }} />
     <Products />
-  </main>
+  </React.Fragment>
 )
 
 export default HomePage

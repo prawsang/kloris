@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import { getCurrentLangKey } from "ptz-i18n"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 import { IntlProvider } from "react-intl"
 import "intl"
 
@@ -47,7 +47,7 @@ class Layout extends React.Component {
           const url = location.pathname
           const { langs, defaultLangKey } = data.site.siteMetadata.languages
           const langKey = getCurrentLangKey(langs, defaultLangKey, url)
-          const homeLink = `/${langKey}`.replace(`/${defaultLangKey}/`, "/")
+          const homeLink = `/${langKey}`.replace(`/${defaultLangKey}`, "/")
 
           return (
             <IntlProvider locale={langKey} messages={i18nMessages}>
@@ -64,7 +64,13 @@ class Layout extends React.Component {
                       defaultLangKey={defaultLangKey}
                       langs={langs}
                     />
-                    <img className="logo" src={logo} alt="Kloris Logo" />
+                    <Link to={homeLink} className="logo">
+                      <img
+                        src={logo}
+                        alt="Kloris Logo"
+                        style={{ verticalAlign: "middle" }}
+                      />
+                    </Link>
                   </div>
                 </div>
                 <div
@@ -72,8 +78,10 @@ class Layout extends React.Component {
                   onClick={() => this.setState({ showMenu: false })}
                 />
                 <Nav className={showMenu ? "is-active" : ""} home={homeLink} />
-                {hasHero || <div style={{ paddingBottom: 70 }} />}
-                {children}
+                <main>
+                  {hasHero || <div style={{ paddingBottom: 50 }} />}
+                  {children}
+                </main>
                 <Footer />
               </React.Fragment>
             </IntlProvider>
