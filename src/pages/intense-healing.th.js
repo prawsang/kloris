@@ -4,9 +4,9 @@ import Layout from "../layout/en"
 import IntenseHealing from "../components/intenseHealing"
 import SEO from "../components/seo"
 
-import home from "../data/messages/home/en"
-import intenseHealing from "../data/messages/intenseHealing/en"
-import general from "../data/messages/en"
+import home from "../data/messages/home/th"
+import intenseHealing from "../data/messages/intenseHealing/th"
+import general from "../data/messages/th"
 
 const IntenseHealingPage = props => (
   <Layout
@@ -14,7 +14,7 @@ const IntenseHealingPage = props => (
     i18nMessages={{ ...general, ...intenseHealing }}
   >
     <SEO
-      title="Intense Healing"
+      title="ฟื้นบำรุงผิวอย่างตรงจุด"
       keywords={[`gatsby`, `application`, `react`]}
     />
     <IntenseHealing />
