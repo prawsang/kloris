@@ -33,23 +33,33 @@ const Footer = ({ intl }) => {
               <FontAwesomeIcon icon={faPhone} className="phone-icon" />{" "}
               +6694-994-8652
             </p>
-            <div className="is-flex is-ai-center line">
-              <span className="social-icon">
-                <FontAwesomeIcon icon={faLine} />
-              </span>
-              <span className="line-id">@kloris</span>
-            </div>
+            <a
+              href="https://line.me/R/ti/p/%40jpr0723u"
+              target="_blank"
+              className="line"
+            >
+              <div className="is-flex is-ai-center is-jc-center">
+                <span className="social-icon">
+                  <FontAwesomeIcon icon={faLine} />
+                </span>
+                <span className="line-id">@kloris</span>
+              </div>
+            </a>
           </div>
           <div className="follow col col-6 is-flex is-jc-flex-end is-ai-center">
             <p className="header" style={textStyle}>
               <FormattedMessage id="follow" />
             </p>
-            <span className="social-icon facebook">
-              <FontAwesomeIcon icon={faFacebookSquare} />
-            </span>
-            <span className="social-icon instagram">
-              <FontAwesomeIcon icon={faInstagram} />
-            </span>
+            <a href="https://www.facebook.com/klorisofficial/" target="_blank">
+              <span className="social-icon facebook">
+                <FontAwesomeIcon icon={faFacebookSquare} />
+              </span>
+            </a>
+            <a href="https://www.instagram.com/klorisofficial/" target="_blank">
+              <span className="social-icon instagram">
+                <FontAwesomeIcon icon={faInstagram} />
+              </span>
+            </a>
           </div>
         </div>
       </div>
