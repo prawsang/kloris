@@ -39,10 +39,15 @@ const Image = ({ name, className, style, fluid }) => (
 const Serum = () => (
   <section className="section container">
     <div className="row col-has-padding is-ai-stretch">
-      <div className="col col-4 center">
-        <div className="sticky content">
-          <div className="rounded image">
-            <Image name="bes" fluid={true} />
+      <div className="col col-4">
+        <div className="sticky content center">
+          <div className="rounded center">
+            <Image
+              name="bes"
+              fluid={true}
+              className="image"
+              style={{ maxWidth: 200 }}
+            />
           </div>
           <h3>
             <FormattedMessage id="bes" />

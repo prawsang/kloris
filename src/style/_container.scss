@@ -30,15 +30,29 @@
     max-width: initial;
   }
 
+  &.has-padding {
+    padding: 40px;
+  }
+  &.rounded {
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 40px;
+  }
   &.dark {
     background-color: $text;
     color: white;
   }
-
-  &.has-padding {
-    padding: 40px;
+  &.white {
+    background-color: white;
+  }
+  &.light {
+    background-color: $light-gray;
+  }
+  &.gray {
+    background-color: $gray;
   }
 }
+
 @media screen and (max-width: 767px) {
   .container {
     width: 90%;

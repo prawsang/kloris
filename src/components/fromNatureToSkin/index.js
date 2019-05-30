@@ -1,7 +1,9 @@
 import React from "react"
 import { FormattedMessage } from "react-intl"
 import Products from "../products"
-import Bes from "./bes"
+import Serum from "./bes"
+import Sunscreen from "./ps"
+import Kakadu from "./kakadu"
 
 const FromNatureToSkin = () => (
   <React.Fragment>
@@ -13,7 +15,9 @@ const FromNatureToSkin = () => (
         <FormattedMessage id="fromNatureToSkinDesc" />
       </p>
     </section>
-    <Bes />
+    <Serum />
+    <Sunscreen />
+    <Kakadu />
     <Products />
   </React.Fragment>
 )

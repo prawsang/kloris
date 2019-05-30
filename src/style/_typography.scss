@@ -70,6 +70,11 @@ a.accent:hover {
 }
 .center {
   text-align: center;
+  .image,
+  img {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (max-width: 767px) {
   .center-xs {
@@ -77,4 +82,9 @@ a.accent:hover {
     margin-right: auto;
     text-align: center;
   }
+}
+
+/* margin/padding */
+.no-mb {
+  margin-bottom: 0 !important;
 }
