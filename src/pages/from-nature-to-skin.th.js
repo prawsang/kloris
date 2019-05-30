@@ -14,7 +14,7 @@ const FromNatureToSkinPage = props => (
     i18nMessages={{ ...home, ...general, ...fromNatureToSkin }}
   >
     <SEO
-      title="From Nature to Skin"
+      title="จากธรรมชาติ สู่ผิวคุณ"
       keywords={[`gatsby`, `application`, `react`]}
     />
     <FromNatureToSkin />

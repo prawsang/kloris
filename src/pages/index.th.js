@@ -13,7 +13,7 @@ const IndexPage = props => (
     i18nMessages={{ ...home, ...general }}
     hasHero={true}
   >
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="หน้าหลัก" keywords={[`gatsby`, `application`, `react`]} />
     <Home />
   </Layout>
 )
