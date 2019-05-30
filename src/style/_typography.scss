@@ -56,6 +56,9 @@ footer {
   .image {
     margin-bottom: 2em;
   }
+  a:hover {
+    color: $accent;
+  }
 }
 
 .accent {
@@ -87,4 +90,9 @@ a.accent:hover {
 /* margin/padding */
 .no-mb {
   margin-bottom: 0 !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
 }
