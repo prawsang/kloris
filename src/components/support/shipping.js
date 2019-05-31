@@ -7,7 +7,11 @@ const Shipping = () => {
     let questions = []
     for (let i = 1; i <= 6; i++) {
       questions.push(
-        <Question question={"shipping" + i} answer={"shipping" + i + "a"} />
+        <Question
+          question={"shipping" + i}
+          answer={"shipping" + i + "a"}
+          key={i}
+        />
       )
     }
     return questions

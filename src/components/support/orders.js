@@ -13,20 +13,20 @@ const Orders = () => (
         <FormattedMessage id="orders1a" /> <FormattedMessage id="orderEmail" />
       </p>
       <Contact />
-      <p>
+      <p style={{ marginBottom: "0.5em" }}>
         <br />
         <b>
           <FormattedMessage id="orderIncludeHeader" />
         </b>
-        <ol style={{ marginTop: "0.5em" }}>
-          <li>
-            <FormattedMessage id="orderInclude1" />
-          </li>
-          <li>
-            <FormattedMessage id="orderInclude2" />
-          </li>
-        </ol>
       </p>
+      <ol>
+        <li>
+          <FormattedMessage id="orderInclude1" />
+        </li>
+        <li>
+          <FormattedMessage id="orderInclude2" />
+        </li>
+      </ol>
       <p>
         <FormattedMessage id="orderConfirm" />
         <br />
