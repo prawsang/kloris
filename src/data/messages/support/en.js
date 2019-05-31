@@ -44,4 +44,7 @@ module.exports = {
     "We will begin shipping only once your payment has been confirmed.",
   orderNotes:
     "Note: If you message us outside of our office hours (8AM-6PM, Mon-Sun), you will be answered by an automated system. Do not worry! We have already received your message and our staff will get back to you during the office hours.",
+  contactCtaHeader: "Can't find your answers?",
+  contactCtaDesc:
+    "Get in touch with us and we’ll get back to you as soon as possible.",
 }
