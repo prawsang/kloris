@@ -3,6 +3,7 @@ import { FormattedMessage } from "react-intl"
 
 import Shipping from "./shipping"
 import Payment from "./payment"
+import Orders from "./orders"
 
 class Support extends React.Component {
   state = {
@@ -16,6 +17,7 @@ class Support extends React.Component {
         </h2>
         <Shipping />
         <Payment />
+        <Orders />
       </section>
     )
   }

@@ -28,14 +28,17 @@ class Question extends React.Component {
             <FontAwesomeIcon icon={faChevronUp} />
           )}
         </div>
-        {collasped || (
-          <div style={{ marginTop: "1em", marginBottom: "1em" }}>
+        <div
+          style={{ marginTop: "1em", marginBottom: "1em" }}
+          className={collasped ? "is-hidden" : ""}
+        >
+          {answer && (
             <p>
               <FormattedMessage id={answer} />
             </p>
-            {children}
-          </div>
-        )}
+          )}
+          {children}
+        </div>
         <hr style={{ marginTop: 20, marginBottom: 20 }} />
       </div>
     )

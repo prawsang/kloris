@@ -1,11 +1,6 @@
 .section {
   margin-bottom: 60px;
 }
-// @media screen and (max-width: 767px) {
-//   .section {
-//     margin-bottom: 40px;
-//   }
-// }
 
 .container {
   box-sizing: border-box;
@@ -188,4 +183,8 @@
 }
 img {
   max-width: 100%;
+}
+
+.is-hidden {
+  display: none;
 }

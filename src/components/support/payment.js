@@ -3,6 +3,7 @@ import { FormattedMessage } from "react-intl"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Question from "./question"
+import Contact from "./contact"
 
 const Image = ({ className, style, name }) => (
   <StaticQuery
@@ -78,10 +79,13 @@ const Payment = () => (
     <h4 style={{ marginBottom: "1em" }}>
       <FormattedMessage id="payment" />
     </h4>
-    <Question question="payment1" answer="payment1a">
-      <h5>
-        <FormattedMessage id="bankInformation" />
-      </h5>
+    <Question question="payment1">
+      <p>
+        <FormattedMessage id="payment1a" /> <FormattedMessage id="orderEmail" />
+      </p>
+      <Contact />
+    </Question>
+    <Question question="bankInformation">
       <div className="row col-has-padding">
         <Bank name="bangkok" />
         <Bank name="kasikorn" />
