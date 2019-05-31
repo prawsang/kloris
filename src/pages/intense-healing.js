@@ -4,7 +4,6 @@ import Layout from "../layout/en"
 import IntenseHealing from "../components/intenseHealing"
 import SEO from "../components/seo"
 
-import home from "../data/messages/home/en"
 import intenseHealing from "../data/messages/intenseHealing/en"
 import general from "../data/messages/en"
 

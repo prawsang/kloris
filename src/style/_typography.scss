@@ -123,3 +123,9 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
+.hoverable {
+  transition: color 0.3s ease;
+  &:hover {
+    color: $accent;
+  }
+}

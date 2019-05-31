@@ -17,7 +17,7 @@ module.exports = {
   hydration: "Intense Hydration",
   hydrationDesc:
     "Wheat extracts** enables the skin to stay hydrate for up to 72 hours by moisturizing the stratum corneum, a layer in human skin. With the skin so hydrated, irritations and itchiness caused by dryness of skin is alleviated.",
-  onlyPs: "Only in Perfcet Sunscreen SPF50/PA+++",
+  onlyPs: "Only in Perfect Sunscreen SPF50/PA+++",
   onlyBes: "Only in Brightening Essence Serum",
   routineHeader: "Enhance your Skin Care Routine",
   routineDesc: "A good and effective skin care routine consists of 5 steps:",
