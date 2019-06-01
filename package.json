@@ -20,6 +20,7 @@
     "gatsby-plugin-sharp": "^2.0.28",
     "gatsby-source-filesystem": "^2.0.24",
     "gatsby-transformer-sharp": "^2.1.17",
+    "google-maps-react": "^2.0.2",
     "intl": "^1.2.5",
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",

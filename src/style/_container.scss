@@ -101,12 +101,12 @@
   display: flex;
   &.col-has-padding {
     margin: 0 -15px;
-    .col {
+    & > .col {
       padding: 15px;
     }
     &.wide-padding {
       margin: 0 -30px;
-      .col {
+      & > .col {
         padding: 30px;
       }
     }
@@ -119,12 +119,12 @@
   .row {
     &.col-has-padding {
       margin: 0 -10px;
-      .col {
+      & > .col {
         padding: 10px;
       }
       &.wide-padding {
         margin: 0 -20px;
-        .col {
+        & > .col {
           padding: 20px;
         }
       }

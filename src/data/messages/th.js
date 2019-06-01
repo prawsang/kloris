@@ -8,6 +8,7 @@ module.exports = {
   follow: "ติดตาม",
 
   learnMore: "รายละเอียด",
+  emailUs: "ส่งอีเมล",
 
   /* Collection */
   setName: "มิราเคิล เรเดียนส์",

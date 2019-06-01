@@ -8,6 +8,7 @@ module.exports = {
   follow: "Follow",
 
   learnMore: "Learn More",
+  emailUs: "Email Us",
 
   /* Collection */
   setName: "Miracle Radiance Brightening Set",

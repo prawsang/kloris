@@ -34,7 +34,6 @@ module.exports = {
   orders1a:
     "Currently, you can only order by directly contacting us by email or LINE. If you are using LINE, use the button below or search for @kloris (with @-sign) to begin chatting with us. If you are ordering via email, please send an email to",
   orderEmail: "orders@kloriscosmetics.com",
-  emailUs: "Email Us",
   orderIncludeHeader: "In your order, please include the following details:",
   orderInclude1: "The names of items you wish to order",
   orderInclude2: "Your name, address, and phone number",

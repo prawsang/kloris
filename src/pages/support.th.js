@@ -9,7 +9,10 @@ import general from "../data/messages/th"
 
 const SupportPage = props => (
   <Layout location={props.location} i18nMessages={{ ...general, ...support }}>
-    <SEO title="Support" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO
+      title="บริการช่วยเหลือ"
+      keywords={[`gatsby`, `application`, `react`]}
+    />
     <Support />
   </Layout>
 )
