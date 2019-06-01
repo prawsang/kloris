@@ -138,6 +138,14 @@ footer {
       color: $text;
       margin-right: 0.5em;
     }
+    &::selection {
+      background: $text; /* WebKit/Blink Browsers */
+      color: white;
+    }
+    &::-moz-selection {
+      background: $text; /* Gecko Browsers */
+      color: white;
+    }
   }
   .social-icon {
     color: $text;
