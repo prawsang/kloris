@@ -55,7 +55,7 @@ const Serum = () => (
           </p>
         </div>
       </div>
-      <div className="row col col-8 wrapped is-flex">
+      <div className="row col-has-padding col col-8 wrapped is-flex">
         <div className="col col-6 content">
           <Image name="lemon" className="image" />
           <h5>
