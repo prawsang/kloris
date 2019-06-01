@@ -8,15 +8,14 @@ import home from "../data/messages/home/th"
 import fromNatureToSkin from "../data/messages/fromNatureToSkin/th"
 import general from "../data/messages/th"
 
+import keywords from "../data/keywords.th"
+
 const FromNatureToSkinPage = props => (
   <Layout
     location={props.location}
     i18nMessages={{ ...home, ...general, ...fromNatureToSkin }}
   >
-    <SEO
-      title="จากธรรมชาติ สู่ผิวคุณ"
-      keywords={[`gatsby`, `application`, `react`]}
-    />
+    <SEO title="จากธรรมชาติ สู่ผิวคุณ" keywords={keywords} />
     <FromNatureToSkin />
   </Layout>
 )
