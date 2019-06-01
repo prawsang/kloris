@@ -1,9 +1,12 @@
 const languages = require("./src/data/languages")
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 module.exports = {
   siteMetadata: {
     title: `Kloris`,
-    description: `123123`,
+    description: `Let the nature unleash your beauty. Stay gorgeous and enhance your skin care routine with our Miracle Radiance Brightening Set.`,
     author: `@prawsang`,
     languages,
   },

@@ -21,5 +21,5 @@ const MyMap = ({ google }) => (
 )
 
 export default GoogleApiWrapper({
-  apiKey: "AIzaSyCBkbG-TQQvc6rVq5sDHa-36Ge-kV6hHg8",
+  apiKey: process.env.GOOGLE_MAPS_API_KEY,
 })(MyMap)
