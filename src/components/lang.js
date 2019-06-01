@@ -7,7 +7,6 @@ const LanguageSelect = ({ langs, currentLangKey, defaultLangKey }) => {
   const altLangs = langs.filter(e => e !== defaultLangKey)
   const location = window.location.pathname.split("/")
   const url = location[location.length - 1]
-  console.log(url)
   return (
     <Link
       to={

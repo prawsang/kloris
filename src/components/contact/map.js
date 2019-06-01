@@ -22,5 +22,4 @@ const MyMap = ({ google }) => (
 
 export default GoogleApiWrapper({
   apiKey: "AIzaSyCBkbG-TQQvc6rVq5sDHa-36Ge-kV6hHg8",
-  version: 3.31,
 })(MyMap)
