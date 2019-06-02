@@ -3,6 +3,8 @@ import React from "react"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
 
+import "../style/index.scss"
+
 const NotFoundPage = props => (
   <>
     <SEO title="404: Not found" />
