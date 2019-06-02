@@ -1,6 +1,6 @@
 {
-  "name": "ricco-web",
-  "private": true,
+  "name": "kloris",
+  "private": false,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
   "author": "Prawsang <prawcha.p@gmail.com>",

@@ -3,20 +3,31 @@ import th from "../assets/web/th.png"
 import en from "../assets/web/en.png"
 import Link from "gatsby-link"
 
-const LanguageSelect = ({ langs, currentLangKey, defaultLangKey }) => {
-  const altLangs = langs.filter(e => e !== defaultLangKey)
-  const location = window.location.pathname.split("/")
-  const url = location[location.length - 1]
-  return (
-    <Link
-      to={
-        currentLangKey !== defaultLangKey ? `/${url}` : `/${altLangs[0]}/${url}`
-      }
-      className="lang"
-    >
-      <img src={currentLangKey !== defaultLangKey ? en : th} alt="" />
-    </Link>
-  )
+class LanguageSelect extends React.Component {
+  state = {
+    url: "",
+  }
+  componentDidMount() {
+    const location = window.location.pathname.split("/")
+    this.setState({ url: location[location.length - 1] })
+  }
+  render() {
+    const { defaultLangKey, currentLangKey, langs } = this.props
+    const { url } = this.state
+    const altLangs = langs.filter(e => e !== defaultLangKey)
+    return (
+      <Link
+        to={
+          currentLangKey !== defaultLangKey
+            ? `/${url}`
+            : `/${altLangs[0]}/${url}`
+        }
+        className="lang"
+      >
+        <img src={currentLangKey !== defaultLangKey ? en : th} alt="" />
+      </Link>
+    )
+  }
 }
 
 export default LanguageSelect
