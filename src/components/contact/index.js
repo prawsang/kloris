@@ -44,7 +44,7 @@ class Contact extends React.Component {
       </div>
       <div className="text-divider">Or</div>
       <p className="center bold larger">Use our form</p>
-      <form onSubmit={this.handleSubmit} className="is-relative">
+      <form onSubmit={this.handleSubmit} className="is-relative" data-netlify="true">
           <InputField 
             value={name} 
             onChange={e => this.setState({ name: e.target.value })} 
