@@ -10,7 +10,7 @@ const Orders = () => (
     </h4>
     <Question question="orders1">
       <p>
-        <FormattedMessage id="orders1a" /> <FormattedMessage id="orderEmail" />
+        <FormattedMessage id="orders1a" />
       </p>
       <Contact />
       <p style={{ marginBottom: "0.5em" }}>

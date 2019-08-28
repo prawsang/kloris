@@ -20,7 +20,7 @@ module.exports = {
     "No. Items cannot be returned for any reason. However, if your item is damaged during shipping, please contact us via phone at +6694-994-8652",
   payment1: "How can I pay for my orders?",
   payment1a:
-    "You can pay for your orders via direct bank transfer. Please see our bank details for our account number, name, and bank name. Once you have completed your payment, please send your proof of payment to LINE @kloris or our email",
+    "You can pay for your orders via direct bank transfer. Please see our bank details for our account number, name, and bank name. Once you have completed your payment, please send your proof of payment to LINE @kloris",
   bankInformation: "Bank information",
   bankName: "Bank Name",
   accountName: "Account Name",
@@ -32,8 +32,7 @@ module.exports = {
   name2: "Sumalee Chayakulkeeree (Pokakorn)",
   orders1: "How do I place an order?",
   orders1a:
-    "Currently, you can only order by directly contacting us by email or LINE. If you are using LINE, use the button below or search for @kloris (with @-sign) to begin chatting with us. If you are ordering via email, please send an email to",
-  orderEmail: "orders@kloriscosmetics.com",
+    "Currently, you can only order by directly contacting us via LINE. Use the button below or search for @kloris (with @-sign) to begin chatting with us.",
   orderIncludeHeader: "In your order, please include the following details:",
   orderInclude1: "The names of items you wish to order",
   orderInclude2: "Your name, address, and phone number",
