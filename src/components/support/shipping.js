@@ -5,7 +5,7 @@ import { FormattedMessage } from "react-intl"
 const Shipping = () => {
   const generateQuestions = () => {
     let questions = []
-    for (let i = 1; i <= 6; i++) {
+    for (let i = 1; i <= 5; i++) {
       questions.push(
         <Question
           question={"shipping" + i}

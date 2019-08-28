@@ -132,3 +132,26 @@ a {
     color: $accent;
   }
 }
+
+.text-divider {
+  align-items: center;
+  display: flex;
+  text-transform: uppercase;
+  padding: 16px 0;
+
+  &:before, &:after {
+    background-color: $text-gray;
+    content: '';
+    display: block;
+    height: 1px;
+    flex-basis: 100%;
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
+  &:before {
+    margin-right: 16px;
+  }
+  &:after {
+    margin-left: 16px;
+  }
+}

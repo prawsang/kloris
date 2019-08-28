@@ -81,7 +81,7 @@ const Payment = () => (
     </h4>
     <Question question="payment1">
       <p>
-        <FormattedMessage id="payment1a" /> <FormattedMessage id="orderEmail" />
+        <FormattedMessage id="payment1a" />
       </p>
       <Contact />
     </Question>

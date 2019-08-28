@@ -12,15 +12,12 @@ module.exports = {
   shipping4: "How long will it take for my items to arrive?",
   shipping4a:
     "The items will arrive in 1-2 days for Bangkok Metropolitan Region and 3-5 days for other provinces in Thailand.",
-  shipping5: "What if my item is lost or damaged during shipping?",
+  shipping5: "I want to return my item. Is it possible?",
   shipping5a:
-    "If your items arrive damaged, or if you think your items are lost during shipping, please contact us via phone for further assistance. Our phone number is +6694-994-8652",
-  shipping6: "I want to return my item. Is it possible?",
-  shipping6a:
-    "No. Items cannot be returned for any reason. However, if your item is damaged during shipping, please contact us via phone at +6694-994-8652",
+    "No. Items cannot be returned or refunded.",
   payment1: "How can I pay for my orders?",
   payment1a:
-    "You can pay for your orders via direct bank transfer. Please see our bank details for our account number, name, and bank name. Once you have completed your payment, please send your proof of payment to LINE @kloris",
+    "You can pay for your orders via direct bank transfer. Please see our bank details for our account number, name, and bank name. Once you have completed your payment, please send your proof of payment to LINE @kloris.",
   bankInformation: "Bank information",
   bankName: "Bank Name",
   accountName: "Account Name",
