@@ -15,7 +15,8 @@ class Contact extends React.Component {
     email: "",
     phone: "",
     message: "",
-    error: false
+    error: false,
+    bot:""
   }
   handleSubmit = e => {
       e.preventDefault();
@@ -44,7 +45,7 @@ class Contact extends React.Component {
       email,
       phone,
       message,
-      error
+      error,
   } = this.state;
   return (
     <section className="section content narrow container">
@@ -57,7 +58,20 @@ class Contact extends React.Component {
       </div>
       <div className="text-divider">Or</div>
       <p className="center bold larger">Use our form</p>
-      <form onSubmit={this.handleSubmit} className="is-relative" data-netlify="true">
+      <form 
+        name="contact" 
+        onSubmit={this.handleSubmit} 
+        className="is-relative" 
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        action="/"
+      >
+          <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <label>
+              Don’t fill this out: <input name="bot-field" onChange={e => this.setState({ bot: e.target.value})} />
+            </label>
+          </p>
           <InputField 
             value={name} 
             onChange={e => this.setState({ name: e.target.value })} 
