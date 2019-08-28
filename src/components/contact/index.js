@@ -3,6 +3,12 @@ import { FormattedMessage, injectIntl, intlShape } from "react-intl"
 
 import Line from "../support/contact";
 
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
+
 class Contact extends React.Component {
   state = {
     name: "",
@@ -19,6 +25,13 @@ class Contact extends React.Component {
       } else {
         this.setState({ error: false })
         // Make request
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode({ "form-name": "contact", ...this.state })
+        })
+          .then(() => console.log("Success!"))
+          .catch(error => console.log(error));
       }
   }
   getPlaceholder = id => {
