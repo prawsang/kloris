@@ -7,5 +7,7 @@ module.exports = {
   phone: "Phone",
   message: "Message",
   required: "All fields are required.",
-  send: "Send Message"
+  send: "Send Message",
+  contactSuccess: "Thank you for contacting us. We'll get back to you as soon as we can.",
+  contactError: "Oops, something went wrong. Please try again."
 }

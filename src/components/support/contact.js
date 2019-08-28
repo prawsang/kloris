@@ -1,5 +1,4 @@
 import React from "react"
-import { FormattedMessage } from "react-intl"
 import addFriend from "../../assets/web/add-friend.png"
 
 const Contact = () => (

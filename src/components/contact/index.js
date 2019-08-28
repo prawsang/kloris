@@ -16,7 +16,9 @@ class Contact extends React.Component {
     phone: "",
     message: "",
     error: false,
-    bot:""
+    bot:"",
+    showError: false,
+    showSuccess: false
   }
   handleSubmit = e => {
       e.preventDefault();
@@ -31,8 +33,25 @@ class Contact extends React.Component {
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: encode({ "form-name": "contact", ...this.state })
         })
-          .then(() => console.log("Success!"))
-          .catch(error => console.log(error));
+          .then(() => {
+            this.setState({
+              name: "",
+              email: "",
+              phone: "",
+              message: "",
+              error: false,
+              bot: "",
+              showError: false,
+              showSuccess: true
+            })
+          })
+          .catch(error => {
+            console.log(error);
+            this.setState({
+              showError: true,
+              showSuccess: false
+            })
+          });
       }
   }
   getPlaceholder = id => {
@@ -46,6 +65,8 @@ class Contact extends React.Component {
       phone,
       message,
       error,
+      showError,
+      showSuccess
   } = this.state;
   return (
     <section className="section content narrow container">
@@ -66,6 +87,12 @@ class Contact extends React.Component {
         data-netlify-honeypot="bot-field"
         action="/"
       >
+          <div className={`snippet accent-bg ${showSuccess ? "" : "is-hidden"}`}>
+            <p className="no-mb"><FormattedMessage id="contactSuccess" /></p>
+          </div>
+          <div className={`snippet danger-bg ${showError ? "" : "is-hidden"}`}>
+            <p className="no-mb"><FormattedMessage id="contactError" /></p>
+          </div>
           <input type="hidden" name="form-name" value="contact" />
           <p hidden>
             <label>

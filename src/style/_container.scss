@@ -48,6 +48,27 @@
   }
 }
 
+.snippet {
+  margin-bottom: 16px;
+  padding: 20px;
+}
+.danger-bg {
+  background-color: $danger;
+  color: white;
+}
+.accent-bg {
+  background-color: $accent;
+  color: $text;
+  &::selection {
+    background: $text; /* WebKit/Blink Browsers */
+    color: white;
+  }
+  &::-moz-selection {
+    background: $text; /* Gecko Browsers */
+    color: white;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .container {
     width: 90%;
